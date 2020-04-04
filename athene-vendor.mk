@@ -746,7 +746,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/motorola/athene/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/motorola/athene/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
-    vendor/motorola/athene/proprietary/vendor/lib/libDevHealth.so:system/vendor/lib/libDevHealth.so \
     vendor/motorola/athene/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/motorola/athene/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/motorola/athene/proprietary/vendor/lib/libdme_main.so:system/vendor/lib/libdme_main.so \
