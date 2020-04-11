@@ -17,7 +17,6 @@
 PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/motorola/athene/proprietary/bin/batt_health:system/bin/batt_health \
-    vendor/motorola/athene/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/athene/proprietary/bin/charge_only_mode:system/bin/charge_only_mode \
     vendor/motorola/athene/proprietary/bin/cnd:system/bin/cnd \
     vendor/motorola/athene/proprietary/bin/cnss_diag:system/bin/cnss_diag \
@@ -28,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/bin/ftmipcd:system/bin/ftmipcd \
     vendor/motorola/athene/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
     vendor/motorola/athene/proprietary/bin/hal_proxy_daemon:system/bin/hal_proxy_daemon \
-    vendor/motorola/athene/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/athene/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/motorola/athene/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/athene/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
@@ -198,6 +196,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/hw/motorola.hardware.camera.provider@2.4-impl.so:system/lib/hw/motorola.hardware.camera.provider@2.4-impl.so \
     vendor/motorola/athene/proprietary/lib/hw/sensorhub.msm8952.so:system/lib/hw/sensorhub.msm8952.so \
     vendor/motorola/athene/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
+    vendor/motorola/athene/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/motorola/athene/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/motorola/athene/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/athene/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/athene/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
@@ -276,14 +276,21 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/motorola/athene/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/motorola/athene/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
+    vendor/motorola/athene/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/motorola/athene/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
     vendor/motorola/athene/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
+    vendor/motorola/athene/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
+    vendor/motorola/athene/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
     vendor/motorola/athene/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/motorola/athene/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
     vendor/motorola/athene/proprietary/vendor/bin/qseeproxysampledaemon:system/vendor/bin/qseeproxysampledaemon \
     vendor/motorola/athene/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/motorola/athene/proprietary/vendor/bin/seemp_healthd:system/vendor/bin/seemp_healthd \
     vendor/motorola/athene/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/motorola/athene/proprietary/vendor/bin/wcnss_filter:system/vendor/bin/wcnss_filter \
+    vendor/motorola/athene/proprietary/vendor/etc/diag_mdlog/Bluetooth_V1.cfg:system/vendor/etc/diag_mdlog/Bluetooth_V1.cfg \
+    vendor/motorola/athene/proprietary/vendor/etc/diag_mdlog/Bluetooth_audio_V1.cfg:system/vendor/etc/diag_mdlog/Bluetooth_audio_V1.cfg \
+    vendor/motorola/athene/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:system/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/motorola/athene/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/motorola/athene/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/motorola/athene/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -291,6 +298,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/motorola/athene/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/motorola/athene/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
+    vendor/motorola/athene/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/motorola/athene/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/motorola/athene/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/motorola/athene/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/motorola/athene/proprietary/vendor/lib/hw/gatekeeper.msm8952.so:system/vendor/lib/hw/gatekeeper.msm8952.so \
@@ -301,6 +310,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/soundfx/libqcomvisualizer.so:system/vendor/lib/soundfx/libqcomvisualizer.so \
     vendor/motorola/athene/proprietary/vendor/lib/soundfx/libqcomvoiceprocessing.so:system/vendor/lib/soundfx/libqcomvoiceprocessing.so \
     vendor/motorola/athene/proprietary/vendor/lib/soundfx/libspeakerbundle.so:system/vendor/lib/soundfxlibspeakerbundle.so \
+    vendor/motorola/athene/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so \
+    vendor/motorola/athene/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/motorola/athene/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/motorola/athene/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/motorola/athene/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -333,6 +344,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libaudioparsers.so:system/vendor/lib/libaudioparsers.so \
     vendor/motorola/athene/proprietary/vendor/lib/libavenhancements.so:system/vendor/lib/libavenhancements.so \
     vendor/motorola/athene/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
+    vendor/motorola/athene/proprietary/vendor/lib/libbt-hidlclient.so:system/vendor/lib/libbt-hidlclient.so \
+    vendor/motorola/athene/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
     vendor/motorola/athene/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/motorola/athene/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/motorola/athene/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
